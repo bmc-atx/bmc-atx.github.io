@@ -179,7 +179,7 @@ li {
 }
 li a {
 	color: rgba(0, 0, 0, 0.87);
-	font-weight: 700;
+	font-weight: 600;
 }
 nav li:hover {
 	background-color: rgba(33, 150, 243, .12);
@@ -191,9 +191,6 @@ nav li:hover {
 	color: #2196F3;
 }
 
-/* ----------------------------------------
-open the sidebar
-------------------------------------------- */
 .contentShift {
 	transform: translateX(300px);
 }
@@ -205,6 +202,9 @@ Flex items
 .col-1-3 {
 	flex-basis: 30%;
 	max-width: 480px;
+}
+.col-1-3 a {
+	text-decoration: none;
 }
 .col-2-3 {
 	flex-basis: 64%;
@@ -225,9 +225,6 @@ main {
 	transition: all 0.35s ease-in-out;
 }
 
-.marketsPage {
-	background-color: #F0F0F0;
-}
 
 /* ----------------------------------------
 Intro Section
@@ -261,6 +258,43 @@ mid-page section
 .midpage {
 	margin-top: 80px;
 }
+
+/* ----------------------------------------
+markets section
+------------------------------------------- */
+.dashboardSection {
+
+}
+
+.reportsContainer {
+	background-color: #F0F0F0;
+	display: flex;
+	justify-content: space-around;
+	margin: 40 auto 0;
+}
+
+/*.reportVisible {
+orange header box
+	flex
+	3 buttons
+	justify content center
+subreports box
+	background: none;
+	display: flex
+	justify content: center;
+	padding: 8px;
+subreports div [to hold one or two across tabs]
+	width: 92%;
+charts div
+	width: 100%;
+	height: 176px;
+caption row
+	display: block;
+	padding:
+
+
+} */
+
 
 /* ----------------------------------------
 Footer
