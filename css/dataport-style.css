@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.24);
-	position: absolute;
+	position: fixed;
   top: 0;
   left: 0;
 	z-index: 2;
@@ -40,19 +40,30 @@ h2 {
   font-weight: 500;
   font-size: 28px;
   color: #FF5722;
+	margin: 0;
+	margin-top: 8px;
 }
 h3 {
   font-size: 21px;
   font-weight: 500;
   color: #FF5722;
 }
-p {
+.text-body {
 	margin-top: 16px;
 }
 a {
 	cursor: pointer;
-	color: #2196F3;
 	text-decoration: none;
+}
+
+.text-body a {
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.87);
+	text-decoration: none;
+	border-bottom: 1px solid #2196F3;
+}
+.text-body a:hover {
+	color: #2196F3;
 }
 
 h2 a {
@@ -60,6 +71,11 @@ h2 a {
 	font-weight: 500;
   font-size: 28px;
   color: #FF5722;
+	text-decoration: none;
+}
+h2 a:hover {
+	font-weight: 400;
+	opacity: .7;
 }
 /* ----------------------------------------
 Classes for typography
@@ -82,6 +98,16 @@ Classes for typography
 }
 
 /* ----------------------------------------
+Decorations
+------------------------------------------- */
+hr {
+  border: none;
+  border-bottom: solid 2px rgba(0,0,0,.38);
+	padding: 0;
+	margin: 8px 0;
+}
+
+/* ----------------------------------------
 Buttons
 ------------------------------------------- */
 .iconButtonContainer {
@@ -92,10 +118,6 @@ Buttons
 .touchZone {
 	height: 48px;
 	width: 48px;
-}
-
-.touchzone a {
-	cursor: pointer;
 }
 
 /* ----------------------------------------
@@ -124,8 +146,6 @@ header {
 .scrollBorder {
 	box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
 }
-
-
 .headerContent {
 	display: flex;
 	justify-content: space-between;
@@ -145,7 +165,6 @@ header {
 	max-width: 460px;
 }
 
-
 /* ----------------------------------------
 sidebar
 ------------------------------------------- */
@@ -153,7 +172,7 @@ sidebar
 nav {
   width: 300px;
   height: 100%;
-	position: absolute;
+	position: fixed;
   top: 0;
 	left: -300px;
 	background-color: #fafafa;
@@ -186,7 +205,7 @@ li {
 	padding: 16px;
 	padding-left: 32px;
 	font-size: 16px;
-  transition: all 300ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 li a {
 	color: rgba(0, 0, 0, 0.87);
