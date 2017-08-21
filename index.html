@@ -20,6 +20,10 @@
 <body>
 	<div class="menuOpenOpacity"></div>
 
+<!-- **************************
+	sidebar
+**************************	 -->
+
 	<nav class="sidebar">
 		<div class="navIcon">
 			<a href="index.html" class="logoBox">
@@ -40,21 +44,54 @@
 	</ul>
 </nav>
 
+<!-- **************************
+header
+************************** -->
+
 <header>
-	<button type="button" name="menu button" class="iconButtonContainer" id="menuButton">
-		<div class="touchZone">
-			<img src="images/button-menu.svg" alt="">
+	<div class="row1">
+		<button type="button" name="menu button" class="iconButtonContainer" id="menuButton">
+			<div class="touchZone">
+				<img src="images/button-menu.svg" alt="">
+			</div>
+		</button>
+		<div class="headerContent">
+			<div class="logoBox"><a href="index.html">
+				<img src="images/logo-dataport_icon.svg" alt="" class="logoBoxIcon">
+				<img src="images/logo-dataport_text.svg" alt="">
+			</a></div>
+			<div class="dropdown">
+				<div class="signInBox" id="notSignedIn">
+					<p class="signInText form blue">Sign in / Create free User ID</p>
+					<button type="button" name="dropdown button" class="iconButtonContainer">
+						<div class="arrowTouchZone">
+							<img src="images/button-arrow-down-active.svg" alt="">
+						</div>
+					</button>
+				</div>
+				<div class="dropdownContainer">
+					<ul class="dropdownList">
+						<li class="dropdownLine">Create a free User ID</li>
+						<li class="dropdownLine">Sign in</li>
+						<li class="dropdownLine">Subscription info</li>
+					</ul>
+				</div>
+			</div>
+
 		</div>
-	</button>
-	<div class="headerContent">
-		<a href="index.html" class="logoBox">
-			<img src="images/logo-dataport_icon.svg" alt="" class="logoBoxIcon">
-			<img src="images/logo-dataport_text.svg" alt="">
-		</a>
-		<div class="signInBox"></div>
 	</div>
 </header>
+
+<!-- **************************
+main
+************************** -->
+
 <main>
+
+	<!-- **************************
+	intro section
+	************************** -->
+
 	<aside class="intro">
 		<div class="col-2-3">
 			<h1>More than the largest source of energy and water data</h1>
@@ -64,6 +101,11 @@
 			<img src="images/logo-dataport-large-blue_fill.svg" alt="dataport logo">
 		</div>
 	</aside>
+
+	<!-- **************************
+	account info section
+	************************** -->
+
 	<section class="flexSection" id="accountInfo">
 		<div class="col-1-3">
 			<h2 class="headingBorder">Create User ID</h2>
@@ -81,6 +123,11 @@
 			<p class="text-body">Learn more about <a href="#">Academic License terms and pricing</a>.</p>
 		</div>
 	</section>
+
+	<!-- **************************
+	pages info section
+	************************** -->
+
 	<section class="midpage">
 		<h1>Data and Research Tools</h1>
 		<p class="text-body">Dataport offers a mix of free and subscription tools for utility analysts and researchers from universities and research institutions.</p>
@@ -99,18 +146,20 @@
 				<hr>
 				<p class="text-body">Dataport's vast database of original and curated data includes utility market operations, federal climate and energy data and minute-interval customer water, gas and appliance-level customer electricity use from nearly 1,000 residences.</p>
 			</div>
+
 			<div class="col-1-3">
 				<div class="iconButtonContainer">
-					<a href="#">
+					<a href="electric_markets.html">
 						<div class="touchZone">
 							<img src="images/icon-electric_markets.svg" alt="">
 						</div>
 					</a>
 				</div>
-				<h2> <a href="#">Electric Markets</a></h2>
+				<h2> <a href="electric_markets.html">Electric Markets</a></h2>
 				<hr>
 				<p class="text-body">Dataport’s Electric Markets dashboard shows live and historical information on electric grid operations for ERCOT. Information includes system-wide and zonal demand, generation, wind power generation, day-ahead market prices and locational marginal pricing.</p>
 			</div>
+
 			<div class="col-1-3">
 				<div class="iconButtonContainer">
 					<a href="#">
@@ -166,9 +215,20 @@
 	</section>
 
 </main>
+
+<!-- **************************
+footer
+************************** -->
+
 <footer>
 
 </footer>
+
+
+<!-- **************************
+javascript
+************************** -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 

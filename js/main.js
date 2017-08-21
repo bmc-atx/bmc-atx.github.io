@@ -1,4 +1,5 @@
 // JS for Dataport site
+$('.dropdownContainer').hide();
 
 $(window).on('scroll', function () {
   var distanceScrolled = $(window).scrollTop();
@@ -33,4 +34,8 @@ $('.menuOpenOpacity').on('click', function() {
     $('.headerContent').fadeIn('350ms');
     $('.menuOpenOpacity').fadeOut('350ms');
   }
+});
+
+$('.signInBox').on('click', function() {
+  $('.dropdownContainer').slideToggle(350);
 });

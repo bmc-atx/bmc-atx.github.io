@@ -20,7 +20,7 @@ body {
 	position: fixed;
   top: 0;
   left: 0;
-	z-index: 2;
+	z-index: 3;
 	display: none;
 }
 
@@ -74,6 +74,8 @@ h2 a {
 	text-decoration: none;
 }
 h2 a:hover {
+	color: #2196F3;
+	text-decoration: underline;
 	font-weight: 400;
 	opacity: .7;
 }
@@ -119,7 +121,20 @@ Buttons
 	height: 48px;
 	width: 48px;
 }
-
+.touchZone:hover {
+	opacity: .6;
+}
+.arrowTouchZone {
+	height: 48px;
+	width: 48px;
+	border-radius: 4px;
+}
+.arrowTouchZone:hover {
+	background-color: rgba(0, 0, 0, 0.08);
+}
+button:focus {
+	outline:0;
+}
 /* ----------------------------------------
 Images
 ------------------------------------------- */
@@ -139,9 +154,15 @@ header {
 	width: 100%;
 	background: rgba(250,250,250,.95);
 	z-index: 1;
+	margin-bottom: 32px;
+}
+.row1 {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 32px;
+}
+.row2 {
+	margin-top: 16px;
+	left: 0;
 }
 .scrollBorder {
 	box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
@@ -152,6 +173,12 @@ header {
 	margin-left: 40px;
 	width: 100%
 }
+.row2Content {
+	margin-left: 88px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+}
 .logoBox {
 	display: flex;
 	justify-content: flex-start;
@@ -160,11 +187,83 @@ header {
 	max-width: 100%;
 	margin-right: 16px;
 }
-.signInBox {
-	min-width: 360px;
-	max-width: 460px;
+.barHeader {
+	display: inline-block;
+	margin-right: 40px;
+}
+/* ----------------------------------------
+page bar
+------------------------------------------- */
+.pageBar {
+	padding: 16px;
+	width: 100%;
+
 }
 
+/* ----------------------------------------
+Dropdown sign-in/account box
+------------------------------------------- */
+.dropdown {
+	position: relative;
+	margin-right: 40px;
+}
+.signInBox {
+	display: flex;
+	justify-content: flex-end;
+}
+.signInText {
+	display: inline-block;
+	text-align: left;
+	padding-right: 8px;
+}
+.signInText:hover {
+	cursor: pointer;
+}
+.dropdownContainer {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	background: #fafafa;
+	padding: 16px 0;
+	box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
+	position: absolute;
+	width: 100%;
+}
+.dropdownList {
+	margin: 0;
+	padding: 0;
+}
+.dropdownLine {
+	font-size: 16px;
+	line-height: 48px;
+	list-style: none;
+	color: rgba(0, 0, 0, 0.54);
+	margin: 0;
+	padding: 0 16px;
+}
+.clear {
+	font-size: 16px;
+	line-height: 48px;
+	list-style: none;
+	color: rgba(0, 0, 0, 0.54);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-style: italic;
+}
+.selectedDropdown {
+	color: #2196F3;
+	font-weight: 600;
+}
+.dropdownLine:hover {
+	color: #FFFFFF;
+	background: #2196F3;
+	transition: all 300ms ease-in-out;
+}
+.clear:hover {
+	color: #FFFFFF;
+	background: #2196F3;
+	transition: all 300ms ease-in-out;
+}
 /* ----------------------------------------
 sidebar
 ------------------------------------------- */
@@ -176,7 +275,7 @@ nav {
   top: 0;
 	left: -300px;
 	background-color: #fafafa;
-	z-index: 3;
+	z-index: 4;
   transition: all 300ms ease-in-out;
 }
 
@@ -224,7 +323,6 @@ nav li:hover {
 .contentShift {
 	transform: translateX(300px);
 }
-
 
 /* ----------------------------------------
 Flex items
