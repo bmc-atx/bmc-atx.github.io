@@ -20,6 +20,10 @@
 <body>
 	<div class="menuOpenOpacity"></div>
 
+	<!-- **************************
+	sidebar
+	**************************	 -->
+
 	<nav class="sidebar">
 		<div class="navIcon">
 			<a href="index.html" class="logoBox">
@@ -27,73 +31,104 @@
 				<img src="images/logo-dataport_text.svg" alt="">
 			</a>
 		</div>
-		<!-- <button type="button" name="close menu button" class="closeButton">
-		<div class="touchZone">
-		<img src="images/button-menu_close.svg" alt="">
-	</div>
-</button> -->
-<ul>
-	<li><a href="index.html">Home</a></li>
-	<li><a href="#">Data Libraries</a></li>
-	<li class="currentPage"><a href="electric_markets.html" class="currentPageText">Electric Markets</a></li>
-	<li><a href="#">Residential Use</a></li>
-	<li><a href="#">Spotlight</a></li>
-	<li><a href="#">Advanced Access</a></li>
-	<li><a href="#">Reports</a></li>
-	<li><a href="#">About</a></li>
-	<li><a href="#">Contact</a></li>
-</ul>
-</nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Data Libraries</a></li>
+			<li class="currentPage"><a href="electric_markets.html" class="currentPageText">Electric Markets</a></li>
+			<li><a href="#">Residential Use</a></li>
+			<li><a href="#">Spotlight</a></li>
+			<li><a href="#">Advanced Access</a></li>
+			<li><a href="#">Reports</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
 
+	<!-- **************************
+	header
+	************************** -->
 
-<!-- **************************
-header
-************************** -->
-
-<header>
-	<div class="row1">
-		<button type="button" name="menu button" class="iconButtonContainer" id="menuButton">
-			<div class="touchZone">
-				<img src="images/button-menu.svg" alt="">
-			</div>
-		</button>
-		<div class="headerContent">
-			<a href="index.html" class="logoBox">
-				<img src="images/logo-dataport_icon.svg" alt="" class="logoBoxIcon">
-				<img src="images/logo-dataport_text.svg" alt="">
-			</a>
-			<div class="signInBox">
-				<p class="signInText form blue">Sign in / Sign up</p>
-				<button type="button" name="dropdown button" class="iconButtonContainer">
-					<div class="arrowTouchZone">
-						<img src="images/button-arrow-down-active.svg" alt="">
+	<header>
+		<div class="row1">
+			<button type="button" name="menu button" class="iconButtonContainer" id="menuButton">
+				<div class="touchZone">
+					<img src="images/button-menu.svg" alt="">
+				</div>
+			</button>
+			<div class="headerContent">
+				<a href="index.html" class="logoBox">
+					<img src="images/logo-dataport_icon.svg" alt="" class="logoBoxIcon">
+					<img src="images/logo-dataport_text.svg" alt="">
+				</a>
+				<div class="dropdown">
+					<div class="signInBox" id="notSignedIn">
+						<p class="signInText form blue">Sign in / Create free User ID</p>
+						<button type="button" name="dropdown button" class="iconButtonContainer">
+							<div class="arrowTouchZone">
+								<img src="images/button-arrow-down-active.svg" alt="">
+							</div>
+						</button>
 					</div>
-				</button>
+					<div class="dropdownContainer">
+						<ul class="dropdownList">
+							<li class="dropdownLine">Create a free User ID</li>
+							<li class="dropdownLine">Sign in</li>
+							<li class="dropdownLine">Subscription info</li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</div>
-	</div>
-	<div class="row2">
-		<div class="row2Content">
-			<img src="images/icon-electric_markets.svg" alt="" class="logoBoxIcon">
-			<h2 class="barHeader">Electric Markets</h2>
-		</div>
 
-	</div>
-	<!--Subheader bar for electric markets
-	Sub-subheader bar for Live Dashboard
-	Graphic
-	Div for graphic
-	Line for graphic caption
--->
+		<div class="row2">
+			<div class="row2Content">
+				<img src="images/icon-electric_markets.svg" alt="" class="logoBoxIcon">
+				<h2 class="barHeader">Electric Markets</h2>
+			</div>
+
+		</div>
+		<!--Subheader bar for electric markets
+		Sub-subheader bar for Live Dashboard
+		Graphic
+		Div for graphic
+		Line for graphic caption
+	-->
 
 </header>
 
 <!-- **************************
 main
 ************************** -->
-
-
 <main>
+<section class="dashboardSection">
+	<section class="reportsContainer">
+		<div class="reportSelectHeader col-1-2">
+			<ul class="headerTabs">
+				<li>
+					<div class="orangeHeaderTab opacityTabActive">
+						<img src="images/icon-pricing.svg" alt="">
+						<p class="iconDescriptor">Pricing</p>
+					</div>
+				</li>
+				<li>
+					<div class="orangeHeaderTab">
+						<img src="images/icon-load.svg" alt="">
+						<p class="iconDescriptor">Load</p>
+					</div>
+				</li>
+				<li>
+					<div class="orangeHeaderTab">
+						<img src="images/icon-wind_turbine.svg" alt="">
+						<p class="iconDescriptor">Wind</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</section>
+
+</section>
 
 </main>
 <footer>

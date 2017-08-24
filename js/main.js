@@ -37,5 +37,13 @@ $('.menuOpenOpacity').on('click', function() {
 });
 
 $('.signInBox').on('click', function() {
-  $('.dropdownContainer').slideToggle(350);
+  $('.dropdownContainer').slideToggle(300);
+});
+$('main').on('click', function() {
+  $('.dropdownContainer').slideUp(300);
+});
+
+$('div .orangeHeaderTab').on('click', function() {
+  $('div .orangeHeaderTab').removeClass('opacityTabActive');
+  $(this).addClass('opacityTabActive');
 });
