@@ -1,0 +1,25 @@
+.iconButtonContainer {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+.touchZone {
+  height: 48px;
+  width: 48px;
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.arrowTouchZone {
+  height: 48px;
+  width: 48px;
+  border-radius: 4px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+button:focus {
+  outline:0;
+}

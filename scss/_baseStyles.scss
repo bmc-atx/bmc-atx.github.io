@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $body-text;
+  line-height: 1.618;
+  margin: 0;
+	background-color: $background-primary;
+}
