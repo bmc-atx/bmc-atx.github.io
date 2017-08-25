@@ -1,13 +1,15 @@
+//overall container for dropdown
 .dropdown {
 	position: relative;
 }
-.signInBox {
+
+.selectBox {
 	display: flex;
 	justify-content: flex-end;
 	padding-left: 16px;
 }
 
-.headerText {
+.selectBoxText {
   padding-right: 8px;
   line-height: 48px;
   font-size: 16px;
@@ -35,31 +37,31 @@
 	font-size: 16px;
 	line-height: 48px;
 	list-style: none;
-	color: rgba(0, 0, 0, 0.54);
+	color: $gray-dark;
 	margin: 0;
 	padding: 0 16px;
+  &:hover {
+    color: #FFFFFF;
+  	background: $primary;
+  	transition: all 300ms ease-in-out;
+  }
 }
 .clear {
 	font-size: 16px;
 	line-height: 48px;
 	list-style: none;
-	color: rgba(0, 0, 0, 0.54);
+	color: $gray-dark;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	font-style: italic;
+  &:hover {
+    color: #FFFFFF;
+  	background: $primary;
+  	transition: all 300ms ease-in-out;
+  }
 }
 .selectedDropdown {
-	color: #2196F3;
+	color: $link;
 	font-weight: 600;
-}
-.dropdownLine:hover {
-	color: #FFFFFF;
-	background: #2196F3;
-	transition: all 300ms ease-in-out;
-}
-.clear:hover {
-	color: #FFFFFF;
-	background: #2196F3;
-	transition: all 300ms ease-in-out;
 }

@@ -48,3 +48,17 @@ a {
     }
   }
 }
+
+.formLeftGray {
+  color: $gray-dark;
+  font-size: 16px;
+  line-height: 48px;
+  display: inline-block;
+}
+.formRight {
+  color: $gray-dark;
+  font-size: 16px;
+  line-height: 48px;
+  display: inline-block;
+  text-align: right;
+}

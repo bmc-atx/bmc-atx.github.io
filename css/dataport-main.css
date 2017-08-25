@@ -11,6 +11,20 @@ body {
   margin: 0;
   background-color: #fafafa; }
 
+main {
+  margin: 0 24px;
+  transition: all 0.35s ease-in-out; }
+
+.menuOpenOpacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none; }
+
 h1, p {
   max-width: 760px; }
 
@@ -55,10 +69,29 @@ a {
     .text-body a:hover {
       color: #2196F3; }
 
+.formLeftGray {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 16px;
+  line-height: 48px;
+  display: inline-block; }
+
+.formRight {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 16px;
+  line-height: 48px;
+  display: inline-block;
+  text-align: right; }
+
 .iconButtonContainer {
   padding: 0;
   border: none;
   background: transparent; }
+
+.formButtonContainer {
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin-left: 8px; }
 
 .touchZone {
   height: 48px;
@@ -76,164 +109,24 @@ a {
 button:focus {
   outline: 0; }
 
-.dropdown {
-  position: relative; }
+.col-1-3 {
+  flex-basis: 30%;
+  max-width: 480px; }
 
-.signInBox {
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 16px; }
+.col-2-3 {
+  flex-basis: 64%;
+  margin-right: 40px;
+  max-width: 760px; }
 
-.headerText {
-  padding-right: 8px;
-  line-height: 48px;
-  font-size: 16px;
-  color: #2196F3;
-  margin: 0; }
-  .headerText:hover {
-    cursor: pointer; }
+.col-1-2 {
+  flex-basis: 46%;
+  max-width: 720px; }
 
-.dropdownContainer {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  background: #fafafa;
-  padding: 16px 0;
-  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  width: 100%; }
-
-.dropdownList {
-  margin: 0;
-  padding: 0; }
-
-.dropdownLine {
-  font-size: 16px;
-  line-height: 48px;
-  list-style: none;
-  color: rgba(0, 0, 0, 0.54);
-  margin: 0;
-  padding: 0 16px; }
-
-.clear {
-  font-size: 16px;
-  line-height: 48px;
-  list-style: none;
-  color: rgba(0, 0, 0, 0.54);
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-style: italic; }
-
-.selectedDropdown {
-  color: #2196F3;
-  font-weight: 600; }
-
-.dropdownLine:hover {
-  color: #FFFFFF;
-  background: #2196F3;
-  transition: all 300ms ease-in-out; }
-
-.clear:hover {
-  color: #FFFFFF;
-  background: #2196F3;
-  transition: all 300ms ease-in-out; }
-
-footer {
-  height: 64px;
-  margin: 0; }
-
-.menuOpenOpacity {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.24);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  display: none; }
-
-/* ----------------------------------------
-Classes for typography
-------------------------------------------- */
-.form {
-  font-size: 16px;
-  line-height: 1.1; }
-
-/* ----------------------------------------
-Decorations
-------------------------------------------- */
-hr {
-  border: none;
-  border-bottom: solid 2px rgba(0, 0, 0, 0.38);
-  padding: 0;
-  margin: 8px 0; }
-
-/* ----------------------------------------
-Images
-------------------------------------------- */
-img {
-  max-width: 100%; }
-
-div.iconButton img {
-  width: 100%; }
-
-/* ----------------------------------------
-Header
-------------------------------------------- */
-header {
-  padding: 16px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(250, 250, 250, 0.95);
-  z-index: 1;
-  margin-bottom: 32px; }
-
-.row1 {
-  display: flex;
-  justify-content: space-between; }
-
-.row2 {
-  margin-top: 16px;
-  left: 0; }
-
-.scrollBorder {
-  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1); }
-
-.headerContent {
+.flexSection {
   display: flex;
   justify-content: space-between;
-  margin-left: 40px;
-  width: 100%; }
+  margin: 40px auto 0; }
 
-.row2Content {
-  margin-left: 88px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline; }
-
-.logoBox {
-  display: flex;
-  justify-content: flex-start; }
-
-.logoBoxIcon {
-  max-width: 100%;
-  margin-right: 16px; }
-
-.barHeader {
-  display: inline-block;
-  margin-right: 40px; }
-
-/* ----------------------------------------
-page bar
-------------------------------------------- */
-.pageBar {
-  padding: 16px;
-  width: 100%; }
-
-/* ----------------------------------------
-sidebar
-------------------------------------------- */
 nav {
   width: 300px;
   height: 100%;
@@ -285,67 +178,108 @@ nav li:hover {
 .contentShift {
   transform: translateX(300px); }
 
-/* ----------------------------------------
-Flex items
-------------------------------------------- */
-.col-1-3 {
-  flex-basis: 30%;
-  max-width: 480px; }
+header {
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(250, 250, 250, 0.95);
+  z-index: 1; }
 
-.col-2-3 {
-  flex-basis: 64%;
-  margin-right: 40px;
-  max-width: 760px; }
+.row1 {
+  display: flex;
+  justify-content: space-between; }
 
-.col-1-2 {
-  flex-basis: 46%;
-  max-width: 720px; }
+.scrollBorder {
+  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1); }
 
-.flexSection {
+.headerContent {
   display: flex;
   justify-content: space-between;
-  margin: 40px auto 0; }
+  margin: 0 40px;
+  width: 100%; }
 
-/* ----------------------------------------
-Main
-------------------------------------------- */
-main {
-  margin: 0 24px;
-  transition: all 0.35s ease-in-out; }
+.logoBox {
+  display: flex;
+  justify-content: flex-start; }
 
-/* ----------------------------------------
-Intro Section
-------------------------------------------- */
-.intro {
+.logoBoxIcon {
+  max-width: 100%;
+  margin-right: 16px; }
+
+.row2 {
+  margin-top: 40px;
+  left: 0; }
+
+.row2Content {
+  margin-left: 88px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin: 80px auto 0;
-  padding-top: 40px; }
+  align-items: baseline; }
+  .row2Content h2 {
+    display: inline-block;
+    margin-right: 40px; }
 
-div.col-2-3 h1 {
+.dropdown {
+  position: relative; }
+
+.selectBox {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 16px; }
+
+.selectBoxText {
+  padding-right: 8px;
+  line-height: 48px;
+  font-size: 16px;
+  color: #2196F3;
   margin: 0; }
+  .selectBoxText:hover {
+    cursor: pointer; }
 
-div.col-2-3 p {
-  margin: 16px 0 0; }
+.dropdownContainer {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #fafafa;
+  padding: 16px 0;
+  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%; }
 
-/* ----------------------------------------
-3-column home page sections
-------------------------------------------- */
-.headingBorder {
-  border-bottom: solid 2px rgba(0, 0, 0, 0.38);
-  padding: 8px 0;
-  margin: 0; }
+.dropdownList {
+  margin: 0;
+  padding: 0; }
 
-/* ----------------------------------------
-mid-page section
-------------------------------------------- */
-.midpage {
-  margin-top: 80px; }
+.dropdownLine {
+  font-size: 16px;
+  line-height: 48px;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0;
+  padding: 0 16px; }
+  .dropdownLine:hover {
+    color: #FFFFFF;
+    background: #2196F3;
+    transition: all 300ms ease-in-out; }
 
-/* ----------------------------------------
-markets section
-------------------------------------------- */
+.clear {
+  font-size: 16px;
+  line-height: 48px;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic; }
+  .clear:hover {
+    color: #FFFFFF;
+    background: #2196F3;
+    transition: all 300ms ease-in-out; }
+
+.selectedDropdown {
+  color: #2196F3;
+  font-weight: 600; }
+
 .dashboardSection {
   margin: 198px auto 0;
   padding-top: 40px; }
@@ -390,26 +324,77 @@ markets section
   list-style: none;
   display: inline-block; }
 
-/*.reportVisible {
-orange header box
-	flex
-	3 buttons
-	justify content center
-subreports box
-	background: none;
-	display: flex
-	justify content: center;
-	padding: 8px;
-subreports div [to hold one or two across tabs]
-	width: 92%;
-charts div
-	width: 100%;
-	height: 176px;
-caption row
-	display: block;
-	padding:
+.form1Line {
+  display: flex;
+  justify-content: space-between; }
 
+/* ----------------------------------------
+Intro Section on index.html
+------------------------------------------- */
+#intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 80px auto 0;
+  padding-top: 40px; }
 
-} */
+/* ----------------------------------------
+3-column home page sections
+------------------------------------------- */
+.headingBorder {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.38);
+  padding: 8px 0;
+  margin: 0; }
+
+/* ----------------------------------------
+page bar
+------------------------------------------- */
+.pageBar {
+  padding: 16px;
+  width: 100%; }
+
+.pageBarContent {
+  margin: 0 40px 0 88px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline; }
+  .pageBarContent h2 {
+    color: #2E578C;
+    display: inline-block;
+    margin-right: 40px; }
+
+/* ----------------------------------------
+mid-page section
+------------------------------------------- */
+.midpage {
+  margin-top: 80px; }
+
+footer {
+  height: 64px;
+  margin: 0; }
+
+/* ----------------------------------------
+Decorations
+------------------------------------------- */
+hr {
+  border: none;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.38);
+  padding: 0;
+  margin: 8px 0; }
+
+/* ----------------------------------------
+Images
+------------------------------------------- */
+img {
+  max-width: 100%; }
+
+div.iconButton img {
+  width: 100%; }
+
+div.col-2-3 h1 {
+  margin: 0; }
+
+div.col-2-3 p {
+  margin: 16px 0 0; }
 
 /*# sourceMappingURL=dataport-main.css.map */

@@ -12,3 +12,7 @@ body {
   margin: 0;
 	background-color: $background-primary;
 }
+main {
+	margin: 0 24px;
+	transition: all 0.35s ease-in-out;
+}

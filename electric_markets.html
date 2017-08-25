@@ -19,11 +19,9 @@
 
 <body>
 	<div class="menuOpenOpacity"></div>
-
 	<!-- **************************
 	sidebar
 	**************************	 -->
-
 	<nav class="sidebar">
 		<div class="navIcon">
 			<a href="index.html" class="logoBox">
@@ -47,7 +45,6 @@
 	<!-- **************************
 	header
 	************************** -->
-
 	<header>
 		<div class="row1">
 			<button type="button" name="menu button" class="iconButtonContainer" id="menuButton">
@@ -61,8 +58,8 @@
 					<img src="images/logo-dataport_text.svg" alt="">
 				</a>
 				<div class="dropdown">
-					<div class="signInBox" id="notSignedIn">
-						<p class="headerText">Sign in / Create free User ID</p>
+					<div class="selectBox" id="notSignedIn">
+						<p class="selectBoxText">Sign in / Create free User ID</p>
 						<button type="button" name="dropdown button" class="iconButtonContainer">
 							<div class="arrowTouchZone">
 								<img src="images/button-arrow-down-active.svg" alt="">
@@ -77,65 +74,75 @@
 						</ul>
 					</div>
 				</div>
-
 			</div>
 		</div>
-
 		<div class="row2">
 			<div class="row2Content">
 				<img src="images/icon-electric_markets.svg" alt="" class="logoBoxIcon">
-				<h2 class="barHeader">Electric Markets</h2>
+				<h2>Electric Markets</h2>
+			</div>
+		</div>
+	</header>
+
+	<!-- **************************
+	main
+	************************** -->
+	<main>
+		<section class="dashboardSection">
+			<div class="pageBar">
+				<div class="pageBarContent">
+					<h2>Live Dashboard</h2>
+					<div class="form1Line">
+						<p class="formLeftGray">Last updated</p>
+						<div>
+							<p class="formRight">12:48 pm, Tue, Sep 21</p>
+							<button type="button" name="refresh button" class="formButtonContainer refresh">
+								<div class="touchZone">
+									<img src="images/button-refresh.svg" alt="">
+								</div>
+							</button>
+							
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<div class="reportsContainer">
+				<div class="reportSelectHeader col-1-2">
+					<ul class="headerTabs">
+						<li>
+							<div class="orangeHeaderTab opacityTabActive">
+								<img src="images/icon-pricing.svg" alt="">
+								<p class="iconDescriptor">Pricing</p>
+							</div>
+						</li>
+						<li>
+							<div class="orangeHeaderTab">
+								<img src="images/icon-load.svg" alt="">
+								<p class="iconDescriptor">Load</p>
+							</div>
+						</li>
+						<li>
+							<div class="orangeHeaderTab">
+								<img src="images/icon-wind_turbine.svg" alt="">
+								<p class="iconDescriptor">Wind</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
 			</div>
 
-		</div>
-		<!--Subheader bar for electric markets
-		Sub-subheader bar for Live Dashboard
-		Graphic
-		Div for graphic
-		Line for graphic caption
-	-->
+		</section>
 
-</header>
+	</main>
+	<footer>
 
-<!-- **************************
-main
-************************** -->
-<main>
-<section class="dashboardSection">
-	<section class="reportsContainer">
-		<div class="reportSelectHeader col-1-2">
-			<ul class="headerTabs">
-				<li>
-					<div class="orangeHeaderTab opacityTabActive">
-						<img src="images/icon-pricing.svg" alt="">
-						<p class="iconDescriptor">Pricing</p>
-					</div>
-				</li>
-				<li>
-					<div class="orangeHeaderTab">
-						<img src="images/icon-load.svg" alt="">
-						<p class="iconDescriptor">Load</p>
-					</div>
-				</li>
-				<li>
-					<div class="orangeHeaderTab">
-						<img src="images/icon-wind_turbine.svg" alt="">
-						<p class="iconDescriptor">Wind</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-
-	</section>
-
-</section>
-
-</main>
-<footer>
-
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

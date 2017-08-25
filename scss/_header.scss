@@ -1,0 +1,45 @@
+header {
+	padding: 16px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(250,250,250,.95);
+	z-index: 1;
+	}
+.row1 {
+	display: flex;
+	justify-content: space-between;
+}
+.scrollBorder {
+	box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
+}
+.headerContent {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 40px;
+	width: 100%
+}
+.logoBox {
+	display: flex;
+	justify-content: flex-start;
+}
+.logoBoxIcon {
+	max-width: 100%;
+	margin-right: 16px;
+}
+
+// second row - for interior pages
+.row2 {
+	margin-top: 40px;
+	left: 0;
+}
+.row2Content {
+	margin-left: 88px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+  h2 {
+    display: inline-block;
+  	margin-right: 40px;
+  }
+}

@@ -36,7 +36,7 @@ $('.menuOpenOpacity').on('click', function() {
   }
 });
 
-$('.signInBox').on('click', function() {
+$('.selectBox').on('click', function() {
   $('.dropdownContainer').slideToggle(300);
 });
 $('main').on('click', function() {
@@ -47,3 +47,7 @@ $('div .orangeHeaderTab').on('click', function() {
   $('div .orangeHeaderTab').removeClass('opacityTabActive');
   $(this).addClass('opacityTabActive');
 });
+
+<!-- $('.refresh').on('click', function() {
+$('button .refresh').
+}) with 8pt left margin and 360deg rotation on click -->

@@ -1,0 +1,55 @@
+.dashboardSection {
+	margin: 198px auto 0;
+	padding-top: 40px;
+}
+
+.reportsContainer {
+	background-color: #F0F0F0;
+	display: flex;
+	justify-content: space-between;
+	margin: 40 auto 0;
+}
+
+.reportSelectHeader {
+	background: rgba(255, 87, 34, 0.76);
+	padding: 8px;
+}
+
+.headerTabs {
+	-webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+
+.orangeHeaderTab {
+	width: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	opacity: .65;
+	margin: 0 16px 0 8px;
+}
+.opacityTabActive {
+	opacity: 1;
+}
+.iconDescriptor {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 11px;
+	text-align: center;
+	line-height: 1.1;
+	-webkit-margin-before: 8px;
+	-webkit-margin-after: 0;
+	letter-spacing: .8px;
+}
+
+.headerTabs li {
+  list-style: none;
+	display: inline-block;
+}
+
+// building blocks for tables
+.form1Line {
+  display: flex;
+  justify-content: space-between;
+}

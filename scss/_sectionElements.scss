@@ -1,0 +1,44 @@
+/* ----------------------------------------
+Intro Section on index.html
+------------------------------------------- */
+#intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 80px auto 0;
+  padding-top: 40px;
+}
+
+/* ----------------------------------------
+3-column home page sections
+------------------------------------------- */
+.headingBorder {
+  border-bottom: solid 2px $border;
+  padding: 8px 0;
+  margin: 0;
+}
+
+/* ----------------------------------------
+page bar
+------------------------------------------- */
+.pageBar {
+  padding: 16px;
+  width: 100%;
+}
+.pageBarContent {
+  margin: 0 40px 0 88px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  h2 {
+    color: #2E578C;
+    display: inline-block;
+    margin-right: 40px;
+  }
+}
+/* ----------------------------------------
+mid-page section
+------------------------------------------- */
+.midpage {
+  margin-top: 80px;
+}
