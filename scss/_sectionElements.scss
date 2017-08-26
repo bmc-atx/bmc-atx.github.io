@@ -6,7 +6,7 @@ Intro Section on index.html
   justify-content: flex-start;
   align-items: flex-start;
   margin: 80px auto 0;
-  padding-top: 40px;
+  padding: 40px 24px 0 24px;
 }
 
 /* ----------------------------------------
@@ -34,11 +34,17 @@ page bar
     color: #2E578C;
     display: inline-block;
     margin-right: 40px;
+    -webkit-margin-before: 0;
   }
 }
 /* ----------------------------------------
-mid-page section
+page sections
 ------------------------------------------- */
+.contentSection {
+  padding: 0 24px;
+  width: 100%;
+}
 .midpage {
   margin-top: 80px;
+  padding: 0 24px;
 }

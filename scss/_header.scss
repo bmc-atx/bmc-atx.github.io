@@ -27,10 +27,19 @@ header {
 	max-width: 100%;
 	margin-right: 16px;
 }
-
+.rightBox {
+  display: flex;
+  justify-content: flex-end;
+}
+.buffer {
+  height: 48px;
+  width: 48px;
+  margin: 0;
+  padding: 0;
+}
 // second row - for interior pages
 .row2 {
-	margin-top: 40px;
+	padding-top: 40px;
 	left: 0;
 }
 .row2Content {

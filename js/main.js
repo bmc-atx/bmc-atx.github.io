@@ -9,7 +9,7 @@ $(window).on('scroll', function () {
   } else {
     $('header').removeClass('scrollBorder');
   }
-  });
+});
 
 $('#menuButton').on('click', function() {
   $('main').addClass('contentShift');
@@ -38,16 +38,31 @@ $('.menuOpenOpacity').on('click', function() {
 
 $('.selectBox').on('click', function() {
   $('.dropdownContainer').slideToggle(300);
+  $('.arrowTouchZone').toggleClass('turnArrow');
+  $('.dropdown').toggleClass('dropdownOpen');
 });
 $('main').on('click', function() {
   $('.dropdownContainer').slideUp(300);
+  $('.arrowTouchZone').removeClass('turnArrow');
+  $('dropdown').removeClass('dropdownOpen');
 });
-
+$('.buffer').on('click', function() {
+  $('.dropdownContainer').slideUp(300);
+  $('.arrowTouchZone').removeClass('turnArrow');
+  $('dropdown').removeClass('dropdownOpen');
+});
+$('.row2').on('click', function() {
+  $('.dropdownContainer').slideUp(300);
+  $('.arrowTouchZone').removeClass('turnArrow');
+  $('dropdown').removeClass('dropdownOpen');
+});
 $('div .orangeHeaderTab').on('click', function() {
   $('div .orangeHeaderTab').removeClass('opacityTabActive');
   $(this).addClass('opacityTabActive');
 });
 
-<!-- $('.refresh').on('click', function() {
-$('button .refresh').
-}) with 8pt left margin and 360deg rotation on click -->
+var refreshAngle =0;
+$('#refreshButton').on('click', function() {
+  refreshAngle += 360;
+  $('.refreshTouchZone').css({'transform': 'rotate(' + refreshAngle + 'deg)'});
+});

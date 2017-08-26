@@ -12,18 +12,25 @@
 .touchZone {
   height: 48px;
   width: 48px;
+  transition: all 300ms ease-in-out;
   &:hover {
     opacity: .6;
   }
 }
-
 .arrowTouchZone {
   height: 48px;
   width: 48px;
   border-radius: 4px;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.08);
+  transition: all 300ms ease-in-out;
+  &.turnArrow {
+    transform: rotate(-180deg);
   }
+}
+.refreshTouchZone {
+  height: 48px;
+  width: 48px;
+  border-radius: 4px;
+  transition: all .6s linear;
 }
 
 button:focus {

@@ -12,7 +12,7 @@ body {
   background-color: #fafafa; }
 
 main {
-  margin: 0 24px;
+  margin: 0;
   transition: all 0.35s ease-in-out; }
 
 .menuOpenOpacity {
@@ -23,6 +23,12 @@ main {
   top: 0;
   left: 0;
   z-index: 3;
+  display: none; }
+
+.backgroundSelect {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.02);
+  z-index: 5;
   display: none; }
 
 h1, p {
@@ -73,14 +79,26 @@ a {
   color: rgba(0, 0, 0, 0.54);
   font-size: 16px;
   line-height: 48px;
-  display: inline-block; }
+  display: inline-block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+.formLeftBlack {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  line-height: 48px;
+  display: inline-block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
 
 .formRight {
   color: rgba(0, 0, 0, 0.54);
   font-size: 16px;
   line-height: 48px;
   display: inline-block;
-  text-align: right; }
+  text-align: right;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
 
 .iconButtonContainer {
   padding: 0;
@@ -95,16 +113,24 @@ a {
 
 .touchZone {
   height: 48px;
-  width: 48px; }
+  width: 48px;
+  transition: all 300ms ease-in-out; }
   .touchZone:hover {
     opacity: .6; }
 
 .arrowTouchZone {
   height: 48px;
   width: 48px;
-  border-radius: 4px; }
-  .arrowTouchZone:hover {
-    background-color: rgba(0, 0, 0, 0.08); }
+  border-radius: 4px;
+  transition: all 300ms ease-in-out; }
+  .arrowTouchZone.turnArrow {
+    transform: rotate(-180deg); }
+
+.refreshTouchZone {
+  height: 48px;
+  width: 48px;
+  border-radius: 4px;
+  transition: all .6s linear; }
 
 button:focus {
   outline: 0; }
@@ -176,7 +202,7 @@ nav li:hover {
   color: #2196F3; }
 
 .contentShift {
-  transform: translateX(300px); }
+  transform: translateX(324px); }
 
 header {
   padding: 16px;
@@ -207,8 +233,18 @@ header {
   max-width: 100%;
   margin-right: 16px; }
 
+.rightBox {
+  display: flex;
+  justify-content: flex-end; }
+
+.buffer {
+  height: 48px;
+  width: 48px;
+  margin: 0;
+  padding: 0; }
+
 .row2 {
-  margin-top: 40px;
+  padding-top: 40px;
   left: 0; }
 
 .row2Content {
@@ -225,8 +261,7 @@ header {
 
 .selectBox {
   display: flex;
-  justify-content: flex-end;
-  padding-left: 16px; }
+  justify-content: flex-end; }
 
 .selectBoxText {
   padding-right: 8px;
@@ -281,14 +316,13 @@ header {
   font-weight: 600; }
 
 .dashboardSection {
-  margin: 198px auto 0;
-  padding-top: 40px; }
+  margin: 198px auto 0; }
 
 .reportsContainer {
   background-color: #F0F0F0;
   display: flex;
   justify-content: space-between;
-  margin: 40 auto 0; }
+  padding-top: 40px; }
 
 .reportSelectHeader {
   background: rgba(255, 87, 34, 0.76);
@@ -328,6 +362,11 @@ header {
   display: flex;
   justify-content: space-between; }
 
+.form1RightBlock {
+  display: flex;
+  margin-left: 24px;
+  justify-content: space-between; }
+
 /* ----------------------------------------
 Intro Section on index.html
 ------------------------------------------- */
@@ -336,7 +375,7 @@ Intro Section on index.html
   justify-content: flex-start;
   align-items: flex-start;
   margin: 80px auto 0;
-  padding-top: 40px; }
+  padding: 40px 24px 0 24px; }
 
 /* ----------------------------------------
 3-column home page sections
@@ -361,13 +400,19 @@ page bar
   .pageBarContent h2 {
     color: #2E578C;
     display: inline-block;
-    margin-right: 40px; }
+    margin-right: 40px;
+    -webkit-margin-before: 0; }
 
 /* ----------------------------------------
-mid-page section
+page sections
 ------------------------------------------- */
+.contentSection {
+  padding: 0 24px;
+  width: 100%; }
+
 .midpage {
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding: 0 24px; }
 
 footer {
   height: 64px;

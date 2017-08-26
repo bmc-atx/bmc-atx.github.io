@@ -1,13 +1,12 @@
 .dashboardSection {
 	margin: 198px auto 0;
-	padding-top: 40px;
 }
 
 .reportsContainer {
 	background-color: #F0F0F0;
 	display: flex;
 	justify-content: space-between;
-	margin: 40 auto 0;
+	padding-top: 40px;
 }
 
 .reportSelectHeader {
@@ -51,5 +50,10 @@
 // building blocks for tables
 .form1Line {
   display: flex;
+  justify-content: space-between;
+}
+.form1RightBlock {
+  display: flex;
+  margin-left: 24px;
   justify-content: space-between;
 }

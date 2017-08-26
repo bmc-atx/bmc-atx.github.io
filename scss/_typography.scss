@@ -54,6 +54,16 @@ a {
   font-size: 16px;
   line-height: 48px;
   display: inline-block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.formLeftBlack {
+  color: $body-text;
+  font-size: 16px;
+  line-height: 48px;
+  display: inline-block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 .formRight {
   color: $gray-dark;
@@ -61,4 +71,6 @@ a {
   line-height: 48px;
   display: inline-block;
   text-align: right;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
