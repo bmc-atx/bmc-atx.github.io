@@ -4,9 +4,7 @@
 
 .reportsContainer {
 	background-color: #F0F0F0;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 40px;
+  padding-top: 40px;
 }
 
 .reportSelectHeader {
@@ -45,15 +43,4 @@
 .headerTabs li {
   list-style: none;
 	display: inline-block;
-}
-
-// building blocks for tables
-.form1Line {
-  display: flex;
-  justify-content: space-between;
-}
-.form1RightBlock {
-  display: flex;
-  margin-left: 24px;
-  justify-content: space-between;
 }

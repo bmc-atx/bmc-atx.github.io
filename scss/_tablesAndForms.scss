@@ -1,0 +1,10 @@
+// building blocks for tables
+.form1Line {
+  display: flex;
+  justify-content: space-between;
+}
+.form1RightBlock {
+  display: flex;
+  margin-left: 24px;
+  justify-content: space-between;
+}

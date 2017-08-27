@@ -315,13 +315,20 @@ header {
   color: #2196F3;
   font-weight: 600; }
 
+.form1Line {
+  display: flex;
+  justify-content: space-between; }
+
+.form1RightBlock {
+  display: flex;
+  margin-left: 24px;
+  justify-content: space-between; }
+
 .dashboardSection {
   margin: 198px auto 0; }
 
 .reportsContainer {
   background-color: #F0F0F0;
-  display: flex;
-  justify-content: space-between;
   padding-top: 40px; }
 
 .reportSelectHeader {
@@ -357,15 +364,6 @@ header {
 .headerTabs li {
   list-style: none;
   display: inline-block; }
-
-.form1Line {
-  display: flex;
-  justify-content: space-between; }
-
-.form1RightBlock {
-  display: flex;
-  margin-left: 24px;
-  justify-content: space-between; }
 
 /* ----------------------------------------
 Intro Section on index.html
