@@ -9,6 +9,12 @@
   background: transparent;
   margin-left: 8px;
 }
+.formButtonContainerRight {
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin-left: 8px;
+}
 .touchZone {
   height: 48px;
   width: 48px;
@@ -35,4 +41,19 @@
 
 button:focus {
   outline:0;
+}
+
+// Checkbox
+
+.checkboxContainer {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  transition: all 300ms ease-in-out;
+  &.notSelected {
+    background-image: url('images/checkbox_not_selected.svg');
+  }
+  &.Selected {
+    background-image: url('checkbox_selected.svg');
+  }
 }

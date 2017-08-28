@@ -66,3 +66,8 @@ $('#refreshButton').on('click', function() {
   refreshAngle += 360;
   $('.refreshTouchZone').css({'transform': 'rotate(' + refreshAngle + 'deg)'});
 });
+
+$('#minimizeDashCheckbox').on('click', function {
+  $('div .checkboxContainer').toggleClass('notSelected');
+  $('div .checkboxContainer').toggleClass('Selected');
+});

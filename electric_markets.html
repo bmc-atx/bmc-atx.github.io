@@ -94,6 +94,7 @@
 		<section class="dashboardSection">
 			<!-- Live Dashboard header bar -->
 			<div class="pageBar">
+
 				<div class="pageBarContent">
 					<h2>Live Dashboard</h2>
 					<!-- Refresh box -->
@@ -111,50 +112,56 @@
 					<!-- End of Refresh box -->
 
 					<!-- Minimize form box -->
-					<div id="minimizeLiveDash">
-						<input type="checkbox" id="minimize-live-dash">
-						<label for="minimize-live-dash">Minimize Live Dashboard</label>
+					<div class="rowButtonLeft">
+						<!-- <input type="checkbox" id="minimize-live-dash">
+						<label for="minimize-live-dash">Minimize Live Dashboard</label> -->
+						<button type="button" name="minimize dashboard button" class="formButtonContainerRight" id="minimizeDashCheckbox">
+							<div class="checkboxContainer notSelected"></div>
+						</button>
+						<p class="formLeftBlack">Minimize Live Dashboard</p>
 					</div>
+					<!-- End of minimize form box -->
 				</div>
 			</div>
 
-			<div class="reportsContainer">
-				<div class="contentSection flexSection">
+					
+		<div class="reportsContainer">
+			<div class="contentSection flexSection">
 
 
-					<div class="reportSelectHeader col-1-2">
-						<ul class="headerTabs">
-							<li>
-								<div class="orangeHeaderTab opacityTabActive">
-									<img src="images/icon-pricing.svg" alt="">
-									<p class="iconDescriptor">Pricing</p>
-								</div>
-							</li>
-							<li>
-								<div class="orangeHeaderTab">
-									<img src="images/icon-load.svg" alt="">
-									<p class="iconDescriptor">Load</p>
-								</div>
-							</li>
-							<li>
-								<div class="orangeHeaderTab">
-									<img src="images/icon-wind_turbine.svg" alt="">
-									<p class="iconDescriptor">Wind</p>
-								</div>
-							</li>
-						</ul>
-					</div>
+				<div class="reportSelectHeader col-1-2">
+					<ul class="headerTabs">
+						<li>
+							<div class="orangeHeaderTab opacityTabActive">
+								<img src="images/icon-pricing.svg" alt="">
+								<p class="iconDescriptor">Pricing</p>
+							</div>
+						</li>
+						<li>
+							<div class="orangeHeaderTab">
+								<img src="images/icon-load.svg" alt="">
+								<p class="iconDescriptor">Load</p>
+							</div>
+						</li>
+						<li>
+							<div class="orangeHeaderTab">
+								<img src="images/icon-wind_turbine.svg" alt="">
+								<p class="iconDescriptor">Wind</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
+		</div>
 
-		</section>
+	</section>
 
-	</main>
-	<footer>
+</main>
+<footer>
 
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
