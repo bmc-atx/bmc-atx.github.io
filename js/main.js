@@ -12,8 +12,9 @@ $(window).on('scroll', function () {
 });
 
 $('#menuButton').on('click', function() {
-  $('main').addClass('contentShift');
+  $('main').addClass('bodyShift');
   $('.headerContent').fadeOut('350ms');
+  $('.row2').addClass('headerShift');
   $('.menuOpenOpacity').show();
   $('nav').addClass('open');
 });
@@ -21,7 +22,8 @@ $('#menuButton').on('click', function() {
 $('.closeButton').on('click', function() {
   if($('nav').hasClass('open')) {
     $('nav').removeClass('open');
-    $('main').removeClass('contentShift');
+    $('main').removeClass('bodyShift');
+    $('.row2').removeClass('headerShift');
     $('.headerContent').fadeIn('350ms');
     $('.menuOpenOpacity').fadeOut('350ms');
   }
@@ -30,7 +32,8 @@ $('.closeButton').on('click', function() {
 $('.menuOpenOpacity').on('click', function() {
   if($('nav').hasClass('open')) {
     $('nav').removeClass('open');
-    $('main').removeClass('contentShift');
+    $('main').removeClass('bodyShift');
+    $('.row2').removeClass('headerShift');
     $('.headerContent').fadeIn('350ms');
     $('.menuOpenOpacity').fadeOut('350ms');
   }
@@ -67,7 +70,14 @@ $('#refreshButton').on('click', function() {
   $('.refreshTouchZone').css({'transform': 'rotate(' + refreshAngle + 'deg)'});
 });
 
-$('#minimizeDashCheckbox').on('click', function {
-  $('div .checkboxContainer').toggleClass('notSelected');
-  $('div .checkboxContainer').toggleClass('Selected');
+$('.img-swap').on('click', function(){
+    if ($(this).attr("class") == "img-swap") {
+      this.src = this.src.replace("_off","_on");
+    } else {
+      this.src = this.src.replace("_on","_off");
+    }
+    $(this).toggleClass("on");
+    $('#liveContainer').slideToggle(350);
+    $('#lastUpdated').toggle();
+    $('#liveDashboardHeader').toggleClass('scrollBorder');
 });

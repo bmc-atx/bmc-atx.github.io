@@ -28,14 +28,15 @@ page bar
 .pageBarContent {
   margin: 0 40px 0 88px;
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: space-between;
   h2 {
     color: #2E578C;
     display: inline-block;
-    margin-right: 40px;
     -webkit-margin-before: 0;
   }
+}
+.flexBarMarginRight {
+  margin-right: 80px;
 }
 /* ----------------------------------------
 page sections

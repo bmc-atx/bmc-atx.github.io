@@ -50,6 +50,11 @@ nav li:hover {
 	color: #2196F3;
 }
 
-.contentShift {
-	transform: translateX(324px);
+// shift elements when sidebar opens
+
+.bodyShift {
+	transform: translateX(300px);
+}
+.headerShift {
+  transform: translateX(300px);
 }

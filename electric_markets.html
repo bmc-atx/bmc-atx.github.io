@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/favicon-dataport.png" type="image/x-icon" />
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -93,12 +93,11 @@
 	<main>
 		<section class="dashboardSection">
 			<!-- Live Dashboard header bar -->
-			<div class="pageBar">
-
+			<div class="pageBar" id="liveDashboardHeader">
 				<div class="pageBarContent">
 					<h2>Live Dashboard</h2>
 					<!-- Refresh box -->
-					<div class="form1Line">
+					<div class="form1Line" id="lastUpdated">
 						<p class="formLeftGray">Last updated</p>
 						<div class="form1RightBlock">
 							<p class="formRight">12:48 pm, Tue, Sep 21</p>
@@ -110,58 +109,64 @@
 						</div>
 					</div>
 					<!-- End of Refresh box -->
-
-					<!-- Minimize form box -->
+					<!-- checkbox - minimize live dashboard -->
 					<div class="rowButtonLeft">
-						<!-- <input type="checkbox" id="minimize-live-dash">
-						<label for="minimize-live-dash">Minimize Live Dashboard</label> -->
-						<button type="button" name="minimize dashboard button" class="formButtonContainerRight" id="minimizeDashCheckbox">
-							<div class="checkboxContainer notSelected"></div>
-						</button>
-						<p class="formLeftBlack">Minimize Live Dashboard</p>
+				    <button type="button" name="minimize dashboard button" class="buttonContainerRight" id="minimizeLiveDash">
+				      <img src="images/checkbox_off.svg" alt="checkbox" class="img-swap">
+				    </button>
+				    <p class="formLeftBlack">Minimize Live Dashboard</p>
+				  </div>
+					<!-- End of checkbox - minimize live dashboard -->
+
+				</div>
+			</div>
+
+			<div class="reportsContainer" id="liveContainer">
+				<div class="contentSection flexSection">
+
+
+					<div class="reportSelectHeader col-1-2">
+						<ul class="headerTabs">
+							<li>
+								<div class="orangeHeaderTab opacityTabActive">
+									<img src="images/icon-pricing.svg" alt="">
+									<p class="iconDescriptor">Pricing</p>
+								</div>
+							</li>
+							<li>
+								<div class="orangeHeaderTab">
+									<img src="images/icon-load.svg" alt="">
+									<p class="iconDescriptor">Load</p>
+								</div>
+							</li>
+							<li>
+								<div class="orangeHeaderTab">
+									<img src="images/icon-wind_turbine.svg" alt="">
+									<p class="iconDescriptor">Wind</p>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<!-- End of minimize form box -->
 				</div>
 			</div>
-
-					
-		<div class="reportsContainer">
-			<div class="contentSection flexSection">
+		</section>
 
 
-				<div class="reportSelectHeader col-1-2">
-					<ul class="headerTabs">
-						<li>
-							<div class="orangeHeaderTab opacityTabActive">
-								<img src="images/icon-pricing.svg" alt="">
-								<p class="iconDescriptor">Pricing</p>
-							</div>
-						</li>
-						<li>
-							<div class="orangeHeaderTab">
-								<img src="images/icon-load.svg" alt="">
-								<p class="iconDescriptor">Load</p>
-							</div>
-						</li>
-						<li>
-							<div class="orangeHeaderTab">
-								<img src="images/icon-wind_turbine.svg" alt="">
-								<p class="iconDescriptor">Wind</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 
-	</section>
 
-</main>
-<footer>
 
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+
+
+	</main>
+	<footer>
+
+	</footer>
+
+	<!-- **************************
+	javascript
+	************************** -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
