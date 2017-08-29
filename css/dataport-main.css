@@ -365,7 +365,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   opacity: .65;
-  margin: 0 16px 0 8px; }
+  margin: 0 16px; }
 
 .opacityTabActive {
   opacity: 1; }
@@ -442,6 +442,11 @@ footer {
 
 .sandboxTopOnly {
   margin-top: 80px; }
+
+.sandboxSpacer {
+  margin: 0;
+  height: 80px;
+  width: 100%; }
 
 /* ----------------------------------------
 Decorations

@@ -79,5 +79,5 @@ $('.img-swap').on('click', function(){
     $(this).toggleClass("on");
     $('#liveContainer').slideToggle(350);
     $('#lastUpdated').toggle();
-    $('#liveDashboardHeader').toggleClass('scrollBorder');
+    $('div.pageBar').toggleClass('scrollBorder');
 });
