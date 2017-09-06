@@ -6,18 +6,26 @@
 	background-color: #F0F0F0;
   padding-top: 40px;
 }
-
-.reportSelectHeader {
-	background: rgba(255, 87, 34, 0.76);
-	padding: 8px;
+.reportColumn {
+	min-width: 260px;
 }
-
+// ul property
 .headerTabs {
 	-webkit-margin-before: 0;
   -webkit-margin-after: 0;
 	-webkit-padding-start: 0;
+	li {
+	  list-style: none;
+		display: inline-block;
+	}
 }
 
+// top orange background header
+.reportSelectHeader {
+	background: rgba($secondary, 0.76);
+	padding: 8px;
+	display: block;
+}
 .orangeHeaderTab {
 	width: 48px;
 	display: flex;
@@ -26,12 +34,13 @@
 	opacity: .65;
 	margin: 0 16px;
 }
-.opacityTabActive {
+.orangeTabActive {
 	opacity: 1;
+	background-color: $background-primary;
 }
 .iconDescriptor {
 	color: #ffffff;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 11px;
 	text-align: center;
 	line-height: 1.1;
@@ -40,7 +49,50 @@
 	letter-spacing: .8px;
 }
 
-.headerTabs li {
-  list-style: none;
-	display: inline-block;
+// gray background subheader
+.subreportHeader {
+	background: $background-grayDark;
+	padding: 8px;
+	text-align: center;
+}
+.subreportPanelTop {
+	display: flex;
+	justify-content: space-around;
+}
+.subreportDisplay{
+	display: none;
+}
+#sub-pricing1 {
+	display: block;
+}
+.subreportTabBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	opacity: .65;
+	padding: 8px;
+	margin: 8px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.1;
+}
+.subreportTabBoxRow1 {
+	font-size: 16px;
+	font-weight: 500;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	letter-spacing: 1px;
+}
+.subreportTabBoxRow2 {
+	font-size: 10px;
+	font-weight: 300;
+	-webkit-margin-before: 8px;
+	-webkit-margin-after: 0;
+	letter-spacing: .8px;
+	max-width: 108px;
+}
+.tabBoxActive {
+	opacity: 1;
+	border: 1px solid #fff;
 }

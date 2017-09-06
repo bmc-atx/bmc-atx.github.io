@@ -1,0 +1,205 @@
+<!-- This is a sandbox to test various elements for the Dataport final project -->
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Dataport sandbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="shortcut icon" href="images/favicon-dataport.png" type="image/x-icon" />
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/dataport-main.css">
+
+</head>
+<body>
+	<div class="sandboxDiv">
+		<div class="contentSection flexSection">
+
+			<!-- start of liveReport1 -->
+			<div class="col-1-4 reportColumn" id="liveReport1">
+
+				<!-- start of liveReport1-1 This is the container for the currently visible report -->
+				<div id="liveReport1-1">
+
+					<!-- start of orange header row -->
+					<div class="reportSelectHeader">
+						<ul class="headerTabs" id="liveReportS1">
+
+							<!-- pricing tab -->
+							<li>
+								<a href="#" class="orangeHeaderTab orangeTabActive" data-related-panel="sub-pricing1">
+									<img src="images/icon-pricing.svg" alt="">
+									<p class="iconDescriptor">Pricing</p>
+								</a>
+							</li>
+							<!-- end of pricing tab -->
+
+							<!-- load tab  -->
+							<li>
+								<a href="#" class="orangeHeaderTab" data-related-panel="sub-load1">
+									<img src="images/icon-load.svg" alt="">
+									<p class="iconDescriptor">Load</p>
+								</a>
+							</li>
+							<!-- end of load tab -->
+
+							<!-- wind tab -->
+							<li>
+								<a href="#" class="orangeHeaderTab" data-related-panel="sub-wind1">
+									<img src="images/icon-wind_turbine.svg" alt="">
+									<p class="iconDescriptor">Wind</p>
+								</a>
+							</li>
+							<!-- end of wind tab -->
+
+						</ul>
+						<!-- end of headerTabs -->
+					</div>
+					<!-- end of orange header row -->
+
+					<!-- start of second row subreports -->
+					<div id="subreportHeader1" class="subreportHeader">
+
+						<!-- pricing tabs -->
+						<section  id="sub-pricing1" class="subreportPanelTop subreportDisplay">
+							<ul class="headerTabs">
+								<li>
+									<a href="#" class="subreportTabBox tabBoxActive subActive">
+										<p class="subreportTabBoxRow1">LMP</p>
+										<p class="subreportTabBoxRow2">locational marginal pricing</p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="subreportTabBox">
+										<p class="subreportTabBoxRow1">SPP</p>
+										<p class="subreportTabBoxRow2">settlement point price</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- end of pricing tabs -->
+
+						<!-- start of load tabs -->
+						<section id="sub-load1" class="subreportPanelTop subreportDisplay">
+							<ul class="headerTabs">
+								<li>
+									<a href="#" class="subreportTabBox tabBoxActive">
+										<p class="subreportTabBoxRow1">load forecast</p>
+										<p class="subreportTabBoxRow2">next 7 days</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- end of load tabs -->
+
+						<!-- start of wind tab -->
+						<section id="sub-wind1" class="subreportPanelTop subreportDisplay">
+							<ul class="headerTabs">
+								<li>
+									<a href="#" class="subreportTabBox tabBoxActive">
+										<p class="subreportTabBoxRow1">wind gen forecast</p>
+										<p class="subreportTabBoxRow2">next 7 days</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- end of wind tab -->
+
+					</div>
+					<!-- end of second row subreports -->
+
+				</div>
+				<!-- end of liveReport1-1 -->
+			</div>
+			<!-- end of liveReport1 -->
+
+		</div>
+		<!-- end of contentSection -->
+	</div>
+	<!-- end of sandboxDiv -->
+<div class="sandboxSpacer"></div>
+
+<!-- start version2 -->
+<div class="contentSection flexSection" id="liveReport2-container">
+
+	<div class="col-1-4" id=liveReport2-1>
+
+		<div id="liveReport2-1-1" class="reportSelectHeader">
+			<ul class="headerTabs">
+				<li>
+					<a class="orangeTabActive" href="#" data-related-panel="women-pricing">Pricing</a>
+				</li>
+				<li>
+					<a href="#" data-related-panel="men-load">Load</a>
+				</li>
+				<li>
+					<a href="#" data-related-panel="home-wind">Wind</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- subheader - secondRow -->
+		<div id="liveReport2-2-2" class="subreportHeader">
+			<section id="women-pricing" class="nav-panel">
+				<ul class="headerTabs">
+					<li><a href="#">LMP</a></li>
+					<li><a href="#">SPP</a></li>
+				</ul>
+			</section>
+			<section id="men-load" class="nav-panel">
+				<ul class="headerTabs">
+					<li><a href="#">load forecast</a></li>
+				</ul>
+			</section>
+			<section id="home-wind" class="nav-panel">
+				<ul class="headerTabs">
+					<li><a href="#">wind forecast</a></li>
+				</ul>
+			</section>
+		</div>
+		<!-- end of subheader - secondRow -->
+
+	</div>
+</div>
+<!-- end of liveReport2-container -->
+
+			<!-- end of version 2 -->
+
+
+	<!-- section break - completed functioning items below -->
+
+
+
+	<div class="sandboxSpacer"></div>
+
+	<div class="sandboxDiv">
+		<h1>Completed, functioning elements</h1>
+
+
+		<!-- **************************
+		checkbox with label
+		************************** -->
+		<div class="rowButtonLeft">
+			<button type="button" name="minimize dashboard button" class="buttonContainerRight" id="minimizeLiveDash">
+				<img src="images/checkbox_off.svg" alt="checkbox" class="img-swap">
+			</button>
+			<p class="formLeftBlack">Minimize Live Dashboard</p>
+		</div>
+		<!-- End of checkbox with label -->
+
+	</div>
+
+	<!-- **************************
+	javascript
+	************************** -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

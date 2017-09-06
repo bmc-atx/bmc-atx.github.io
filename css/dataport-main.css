@@ -5,7 +5,7 @@ html {
   font-size: 18px; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open+Sans", sans-serif;
   color: rgba(0, 0, 0, 0.87);
   line-height: 1.618;
   margin: 0;
@@ -23,12 +23,6 @@ main {
   top: 0;
   left: 0;
   z-index: 3;
-  display: none; }
-
-.backgroundSelect {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.02);
-  z-index: 5;
   display: none; }
 
 h1, p {
@@ -63,7 +57,8 @@ h3 {
 
 a {
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87); }
 
 .text-body {
   margin-top: 16px; }
@@ -153,6 +148,9 @@ button:focus {
   margin-right: 40px;
   max-width: 760px; }
 
+.col-1-4 {
+  flex-basis: 22%; }
+
 .col-1-2 {
   flex-basis: 46%;
   max-width: 720px; }
@@ -171,6 +169,20 @@ nav {
   background-color: #fafafa;
   z-index: 4;
   transition: all 300ms ease-in-out; }
+  nav ul {
+    padding-left: 24px; }
+    nav ul li {
+      list-style: none;
+      display: block;
+      padding: 16px;
+      padding-left: 32px;
+      font-size: 16px;
+      transition: all 150ms ease-in-out; }
+      nav ul li a {
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 600; }
+      nav ul li:hover {
+        background-color: rgba(33, 150, 243, 0.12); }
 
 .open {
   left: 0px; }
@@ -185,24 +197,6 @@ nav {
   padding: 0;
   border: none;
   background: transparent; }
-
-nav ul {
-  padding-left: 24px; }
-
-nav ul li {
-  list-style: none;
-  display: block;
-  padding: 16px;
-  padding-left: 32px;
-  font-size: 16px;
-  transition: all 150ms ease-in-out; }
-
-li a {
-  color: rgba(0, 0, 0, 0.87);
-  font-weight: 600; }
-
-nav li:hover {
-  background-color: rgba(33, 150, 243, 0.12); }
 
 .currentPage {
   border-left: 4px solid #2196F3; }
@@ -350,14 +344,21 @@ header {
   background-color: #F0F0F0;
   padding-top: 40px; }
 
-.reportSelectHeader {
-  background: rgba(255, 87, 34, 0.76);
-  padding: 8px; }
+.reportColumn {
+  min-width: 260px; }
 
 .headerTabs {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-padding-start: 0; }
+  .headerTabs li {
+    list-style: none;
+    display: inline-block; }
+
+.reportSelectHeader {
+  background: rgba(255, 87, 34, 0.76);
+  padding: 8px;
+  display: block; }
 
 .orangeHeaderTab {
   width: 48px;
@@ -367,12 +368,13 @@ header {
   opacity: .65;
   margin: 0 16px; }
 
-.opacityTabActive {
-  opacity: 1; }
+.orangeTabActive {
+  opacity: 1;
+  background-color: #fafafa; }
 
 .iconDescriptor {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 11px;
   text-align: center;
   line-height: 1.1;
@@ -380,9 +382,51 @@ header {
   -webkit-margin-after: 0;
   letter-spacing: .8px; }
 
-.headerTabs li {
-  list-style: none;
-  display: inline-block; }
+.subreportHeader {
+  background: #8E8E93;
+  padding: 8px;
+  text-align: center; }
+
+.subreportPanelTop {
+  display: flex;
+  justify-content: space-around; }
+
+.subreportDisplay {
+  display: none; }
+
+#sub-pricing1 {
+  display: block; }
+
+.subreportTabBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: .65;
+  padding: 8px;
+  margin: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.1; }
+
+.subreportTabBoxRow1 {
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  letter-spacing: 1px; }
+
+.subreportTabBoxRow2 {
+  font-size: 10px;
+  font-weight: 300;
+  -webkit-margin-before: 8px;
+  -webkit-margin-after: 0;
+  letter-spacing: .8px;
+  max-width: 108px; }
+
+.tabBoxActive {
+  opacity: 1;
+  border: 1px solid #fff; }
 
 /* ----------------------------------------
 Intro Section on index.html
@@ -447,6 +491,46 @@ footer {
   margin: 0;
   height: 80px;
   width: 100%; }
+
+#liveReport2-1-1 {
+  display: block; }
+
+#liveReport2-1-1 ul {
+  text-align: center;
+  list-style: none;
+  margin: 0; }
+
+#liveReport2-1-1 li {
+  display: inline-block; }
+
+#liveReport2-1-1 a {
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #706F6A;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 24px;
+  margin-bottom: -1px;
+  padding: 15px 24px; }
+  #liveReport2-1-1 a:hover {
+    color: #000; }
+
+#women-pricing {
+  display: block; }
+
+.nav-panel {
+  display: none; }
+  .nav-panel ul {
+    margin: 0;
+    text-align: center; }
+    .nav-panel ul li {
+      font-size: 22px;
+      text-transform: uppercase; }
+  .nav-panel a {
+    display: inline-block;
+    padding: 15px 20px 0; }
 
 /* ----------------------------------------
 Decorations

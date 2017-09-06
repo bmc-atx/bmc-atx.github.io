@@ -6,12 +6,13 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open+Sans", sans-serif;
   color: $body-text;
   line-height: 1.618;
   margin: 0;
 	background-color: $background-primary;
 }
+
 main {
 	margin: 0;
 	transition: all 0.35s ease-in-out;
