@@ -369,8 +369,7 @@ header {
   margin: 0 16px; }
 
 .orangeTabActive {
-  opacity: 1;
-  background-color: #fafafa; }
+  opacity: 1; }
 
 .iconDescriptor {
   color: #ffffff;
@@ -384,18 +383,14 @@ header {
 
 .subreportHeader {
   background: #8E8E93;
-  padding: 8px;
-  text-align: center; }
+  padding: 8px; }
 
-.subreportPanelTop {
-  display: flex;
-  justify-content: space-around; }
-
-.subreportDisplay {
+.subPanel-1 {
   display: none; }
-
-#sub-pricing1 {
-  display: block; }
+  .subPanel-1 a {
+    display: flex;
+    align-items: center;
+    padding: 8px; }
 
 .subreportTabBox {
   display: flex;
@@ -427,6 +422,19 @@ header {
 .tabBoxActive {
   opacity: 1;
   border: 1px solid #fff; }
+
+.subPanel-2 {
+  display: none; }
+  .subPanel-2 a {
+    display: flex;
+    align-items: center;
+    padding: 8px; }
+
+#pricing-1 {
+  display: block; }
+
+#pricing-2 {
+  display: block; }
 
 /* ----------------------------------------
 Intro Section on index.html
@@ -491,46 +499,6 @@ footer {
   margin: 0;
   height: 80px;
   width: 100%; }
-
-#liveReport2-1-1 {
-  display: block; }
-
-#liveReport2-1-1 ul {
-  text-align: center;
-  list-style: none;
-  margin: 0; }
-
-#liveReport2-1-1 li {
-  display: inline-block; }
-
-#liveReport2-1-1 a {
-  text-transform: uppercase;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  color: #706F6A;
-  text-decoration: none;
-  padding: 10px 0;
-  font-size: 24px;
-  margin-bottom: -1px;
-  padding: 15px 24px; }
-  #liveReport2-1-1 a:hover {
-    color: #000; }
-
-#women-pricing {
-  display: block; }
-
-.nav-panel {
-  display: none; }
-  .nav-panel ul {
-    margin: 0;
-    text-align: center; }
-    .nav-panel ul li {
-      font-size: 22px;
-      text-transform: uppercase; }
-  .nav-panel a {
-    display: inline-block;
-    padding: 15px 20px 0; }
 
 /* ----------------------------------------
 Decorations

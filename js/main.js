@@ -84,8 +84,8 @@ $('div .orangeHeaderTab').on('click', function () {
 
 
 // subreport tab selection
-$('#sub-pricing1 .subreportTabBox').on('click', function() {
-  $('#sub-pricing1 .subreportTabBox').removeClass('tabBoxActive');
+$('#liveReport2-2-1 a').on('click', function() {
+  $('#liveReport2-2-1 a').removeClass('tabBoxActive');
   $(this).addClass('tabBoxActive');
 });
 
@@ -93,7 +93,8 @@ $('#sub-pricing1 .subreportTabBox').on('click', function() {
 $('#liveReport2-1-1 a').on('click', function () {
 		$('#liveReport2-1-1 a').removeClass('orangeTabActive');
 		$(this).addClass('orangeTabActive');
-		$('.nav-panel').hide();
+		$('.subPanel-1').hide();
 		var sectionToShow = $(this).attr('data-related-panel');
 		$('#' + sectionToShow).show();
+    $('#liveReport2-2-1 a').removeClass('tabBoxActive');
 });

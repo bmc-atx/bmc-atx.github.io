@@ -36,7 +36,6 @@
 }
 .orangeTabActive {
 	opacity: 1;
-	background-color: $background-primary;
 }
 .iconDescriptor {
 	color: #ffffff;
@@ -53,18 +52,18 @@
 .subreportHeader {
 	background: $background-grayDark;
 	padding: 8px;
-	text-align: center;
 }
-.subreportPanelTop {
-	display: flex;
-	justify-content: space-around;
-}
-.subreportDisplay{
+// this class keeps all tabs hidden initially except the default value
+.subPanel-1 {
 	display: none;
+	a {
+		display: flex;
+		align-items: center;
+		padding: 8px;
+	}
 }
-#sub-pricing1 {
-	display: block;
-}
+
+// subreport row 1 styles
 .subreportTabBox {
 	display: flex;
 	flex-direction: column;
@@ -95,4 +94,22 @@
 .tabBoxActive {
 	opacity: 1;
 	border: 1px solid #fff;
+}
+
+// subreport row 2 styles
+.subPanel-2 {
+	display: none;
+	a {
+		display: flex;
+		align-items: center;
+		padding: 8px;
+	}
+}
+
+// market report row 1 active panels
+#pricing-1 {
+  display: block;
+}
+#pricing-2 {
+  display: block;
 }
