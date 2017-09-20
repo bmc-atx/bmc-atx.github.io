@@ -392,6 +392,9 @@ header {
     align-items: center;
     padding: 8px; }
 
+.subPanel-1-active {
+  display: block; }
+
 .subreportTabBox {
   display: flex;
   flex-direction: column;
@@ -402,7 +405,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  line-height: 1.1; }
+  line-height: 1.2; }
 
 .subreportTabBoxRow1 {
   font-size: 16px;
@@ -430,11 +433,30 @@ header {
     align-items: center;
     padding: 8px; }
 
-#pricing-1 {
+.subPanel-2-active {
   display: block; }
 
-#pricing-2 {
-  display: block; }
+.subreport2Tab {
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: .65;
+  display: inline-block;
+  padding: 8px; }
+
+.subreport2Tab-active {
+  opacity: 1;
+  font-weight: 500; }
+
+.subreport2TabExplanatory {
+  font-size: 10px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: .65;
+  display: inline-block;
+  padding: 8px; }
 
 /* ----------------------------------------
 Intro Section on index.html

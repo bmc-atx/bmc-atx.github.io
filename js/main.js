@@ -89,12 +89,13 @@ $('#liveReport2-2-1 a').on('click', function() {
   $(this).addClass('tabBoxActive');
 });
 
-// sandbochs report
+// report level 1 tab
 $('#liveReport2-1-1 a').on('click', function () {
 		$('#liveReport2-1-1 a').removeClass('orangeTabActive');
 		$(this).addClass('orangeTabActive');
-		$('.subPanel-1').hide();
+		$('.subPanel-1').removeClass('subPanel-1-active');
 		var sectionToShow = $(this).attr('data-related-panel');
-		$('#' + sectionToShow).show();
+		$('#' + sectionToShow).addClass('subPanel-1-active');
     $('#liveReport2-2-1 a').removeClass('tabBoxActive');
+    $('#liveReport2-2-1 .subPanel-1-active li:first a.subreportTabBox').addClass('tabBoxActive');
 });
